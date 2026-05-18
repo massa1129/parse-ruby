@@ -1,0 +1,6 @@
+@name テスト 名前
+@date 2026-05-18
+
+@section 開発
+@subsection ツール
+- バイブコーディングが楽

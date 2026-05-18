@@ -1,0 +1,11 @@
+{
+  "metadata": {
+    "name": {"trigger": "^@name\\s+(.+)$", "type": "string"},
+    "date": {"trigger": "^@date\\s+(.+)$", "type": "string"}
+  },
+  "structures": {
+    "section": {"trigger": "^@section\\s+(.+)$", "type": "parent"},
+    "subsection": {"trigger": "^@subsection\\s+(.+)$", "type": "child", "parent": "section"},
+    "paragraph": {"trigger": "^-\\s+(.+)$", "type": "list", "parent": "subsection"}
+  }
+}
